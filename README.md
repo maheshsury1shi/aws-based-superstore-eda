@@ -95,13 +95,7 @@ Example output files in the `images/` folder:
 - `images/correlation-heatmap.png`
 - `images/profit-boxplot.png`
 
-# Future Improvements
 
-- Add time-series sales analysis.
-- Build customer segmentation models.
-- Create interactive dashboards.
-- Add AWS deployment or cloud storage integration.
-- Expand reporting with summary dashboards.
 
 # Author
 
