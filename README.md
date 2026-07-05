@@ -26,12 +26,12 @@ This repository showcases an end-to-end analytics workflow for the Superstore da
 
 ## AWS Services Used
 
-- Amazon EC2: Hosts the Python environment on an Ubuntu Linux instance for deployment and remote operations.
-- IAM Roles: Provides secure, role-based access to AWS services without hardcoded credentials.
-- Amazon S3: Stores generated reports, charts, and project artifacts.
-- Amazon CloudWatch: Monitors system performance, logs, and operational health.
-- CloudWatch Agent: Collects system metrics and logs from the Linux server.
-- AWS CLI: Enables command-line interaction for configuration and cloud resource management.
+- Amazon EC2: An Ubuntu Linux EC2 instance was launched and used to deploy and run the EDA workflow.
+- IAM Roles: An IAM role named EC2-S3-Role was attached to the instance to support secure access for AWS services.
+- Amazon S3: Used for storing generated charts and reports as project artifacts.
+- Amazon CloudWatch: Used to monitor metrics and logs from the EC2 instance.
+- CloudWatch Agent: Installed and configured to collect system-level performance data from the Linux server.
+- AWS CLI: Configured for cloud operations and service management.
 
 ## Linux Skills Demonstrated
 
@@ -45,7 +45,18 @@ This repository showcases an end-to-end analytics workflow for the Superstore da
 
 ## Project Architecture
 
-The architecture for this project is documented in [architecture.md](architecture.md).
+[![View Full Architecture Diagram](docs/architecture-overview.svg)](architecture.md)
+
+Click the image above to view the full architecture diagram and workflow details in [architecture.md](architecture.md).
+
+## Verified AWS and Linux Evidence
+
+The repository includes proof screenshots from the AWS and Linux workflow in [aws-console-&-linux](aws-console-&-linux):
+
+- EC2 instance setup on Ubuntu Linux: [Screenshot 2026-07-05 160242.png](aws-console-&-linux/Screenshot%202026-07-05%20160242.png)
+- IAM role attached to the instance: [Screenshot 2026-07-05 203234.png](aws-console-&-linux/Screenshot%202026-07-05%20203234.png)
+- CloudWatch metrics dashboard: [Screenshot 2026-07-05 203250.png](aws-console-&-linux/Screenshot%202026-07-05%20203250.png)
+- CloudWatch disk metrics example: [Screenshot 2026-07-05 203313.png](aws-console-&-linux/Screenshot%202026-07-05%20203313.png)
 
 ## Workflow
 
@@ -107,40 +118,36 @@ This will generate charts in the images folder and reports in the reports folder
 ## AWS Deployment Steps
 
 ### 1. EC2
-- Launch an Ubuntu EC2 instance in the desired AWS region.
+- Launch an Ubuntu EC2 instance in the target AWS region; the setup was verified through the EC2 screenshots in the repository.
 
 ### 2. IAM Role
-- Attach an IAM role with permissions for S3 and CloudWatch access.
+- Attach an IAM role such as EC2-S3-Role with CloudWatchAgentServerPolicy for secure AWS access.
 
 ### 3. Python Virtual Environment
 - Create and activate a Python virtual environment on the EC2 instance.
 
 ### 4. AWS CLI
-- Configure AWS CLI with your credentials and default region.
+- Configure AWS CLI and the default region for deployment and artifact upload.
 
 ### 5. S3 Upload
-- Upload generated reports and images to an S3 bucket.
+- Upload generated reports and images to Amazon S3 for storage.
 
 ### 6. CloudWatch Agent
-- Install and configure the CloudWatch Agent on the Linux server.
+- Install and configure the CloudWatch Agent on the Linux server to publish system metrics.
 
 ### 7. CloudWatch Logs
-- Enable log collection for system and application logs.
+- Enable log collection for system and application logs from the EC2 instance.
 
 ### 8. CloudWatch Metrics
-- Monitor CPU, memory, disk usage, and network performance.
+- Monitor metrics such as CPU, memory, disk usage, and disk_inodes_free in CloudWatch.
 
 ## Project Screenshots
 
-- docs/ec2-instance.png
-- docs/cloudwatch-dashboard.png
-- docs/cloudwatch-logs.png
-- docs/s3-bucket.png
-- docs/aws-architecture.png
-- docs/linux-terminal.png
-- docs/project-output.png
-
-Example screenshots from the AWS and Linux workflow are available in [aws-console-&-linux](aws-console-&-linux).
+- [aws-console-&-linux/Screenshot 2026-07-05 160242.png](aws-console-&-linux/Screenshot%202026-07-05%20160242.png) — EC2 instance details on Ubuntu
+- [aws-console-&-linux/Screenshot 2026-07-05 203234.png](aws-console-&-linux/Screenshot%202026-07-05%20203234.png) — IAM role attachment
+- [aws-console-&-linux/Screenshot 2026-07-05 203250.png](aws-console-&-linux/Screenshot%202026-07-05%20203250.png) — CloudWatch metrics dashboard
+- [aws-console-&-linux/Screenshot 2026-07-05 203313.png](aws-console-&-linux/Screenshot%202026-07-05%20203313.png) — CloudWatch disk metrics
+- [aws-console-&-linux](aws-console-&-linux) — complete screenshot collection for the AWS and Linux workflow
 
 ## Generated Visualizations
 
@@ -171,11 +178,8 @@ Example screenshots from the AWS and Linux workflow are available in [aws-consol
 ## Future Enhancements
 
 - Streamlit dashboard for interactive exploration
-- Docker containerization for portability
-- Terraform-based infrastructure automation
-- AWS Lambda-based automation workflows
-- Amazon QuickSight integration for business dashboards
-- CI/CD pipelines using GitHub Actions
+- Enhanced AWS monitoring and alerting
+- Additional automation for report generation
 
 ## Author
 
