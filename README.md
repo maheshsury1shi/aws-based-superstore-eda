@@ -45,9 +45,32 @@ This repository showcases an end-to-end analytics workflow for the Superstore da
 
 ## Project Architecture
 
-[![View Full Architecture Diagram](docs/architecture-overview.svg)](architecture.md)
+## Architecture Diagram
 
-Click the image above to view the full architecture diagram and workflow details in [architecture.md](architecture.md).
+```text
+Superstore Dataset (.xlsx)
+          │
+          ▼
+Python EDA Application
+(Pandas, NumPy, Matplotlib, Seaborn)
+          │
+          ▼
+Ubuntu EC2 Instance
+          │
+          ▼
+Generate Charts & Reports
+          │
+          ├──────────────► Amazon S3
+          │                 (Store Charts & Reports)
+          │
+          ▼
+CloudWatch Agent
+          │
+          ├──────────────► CloudWatch Metrics
+          │
+          └──────────────► CloudWatch Logs
+```
+[![View Full Architecture Diagram](docs/architecture-overview.png)](architecture.md)
 
 ## Verified AWS and Linux Evidence
 
