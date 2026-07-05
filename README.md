@@ -103,3 +103,10 @@ Example output files in the `images/` folder:
 - Add AWS deployment or cloud storage integration.
 - Expand reporting with summary dashboards.
 
+# Author
+
+Mahesh Suryawanshi 
+
+https://www.linkedin.com/in/maheshsury1shi/
+
+maheshsury1shi@gmail.com
