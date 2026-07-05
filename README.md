@@ -76,10 +76,10 @@ CloudWatch Agent
 
 The repository includes proof screenshots from the AWS and Linux workflow in [aws-console-&-linux](aws-console-&-linux):
 
-- EC2 instance setup on Ubuntu Linux: [Screenshot 2026-07-05 160242.png](aws-console-&-linux/Screenshot%202026-07-05%20160242.png)
-- IAM role attached to the instance: [Screenshot 2026-07-05 203234.png](aws-console-&-linux/Screenshot%202026-07-05%20203234.png)
-- CloudWatch metrics dashboard: [Screenshot 2026-07-05 203250.png](aws-console-&-linux/Screenshot%202026-07-05%20203250.png)
-- CloudWatch disk metrics example: [Screenshot 2026-07-05 203313.png](aws-console-&-linux/Screenshot%202026-07-05%20203313.png)
+- EC2 instance setup on Ubuntu Linux: [ec2-ubuntu-instance-details.png](aws-console-&-linux/ec2-ubuntu-instance-details.png)
+- IAM role attached to the instance: [iam-role-ec2-s3-role.png](aws-console-&-linux/iam-role-ec2-s3-role.png)
+- CloudWatch metrics dashboard: [cloudwatch-metrics-dashboard.png](aws-console-&-linux/cloudwatch-metrics-dashboard.png)
+- CloudWatch disk metrics example: [cloudwatch-disk-metrics.png](aws-console-&-linux/cloudwatch-disk-metrics.png)
 
 ### AWS Console Keywords Captured in the Screenshots
 
@@ -172,10 +172,10 @@ This will generate charts in the images folder and reports in the reports folder
 
 ## Project Screenshots
 
-- [aws-console-&-linux/Screenshot 2026-07-05 160242.png](aws-console-&-linux/Screenshot%202026-07-05%20160242.png) — EC2 instance details on Ubuntu
-- [aws-console-&-linux/Screenshot 2026-07-05 203234.png](aws-console-&-linux/Screenshot%202026-07-05%20203234.png) — IAM role attachment
-- [aws-console-&-linux/Screenshot 2026-07-05 203250.png](aws-console-&-linux/Screenshot%202026-07-05%20203250.png) — CloudWatch metrics dashboard
-- [aws-console-&-linux/Screenshot 2026-07-05 203313.png](aws-console-&-linux/Screenshot%202026-07-05%20203313.png) — CloudWatch disk metrics
+- [aws-console-&-linux/ec2-ubuntu-instance-details.png](aws-console-&-linux/ec2-ubuntu-instance-details.png) — EC2 instance details on Ubuntu
+- [aws-console-&-linux/iam-role-ec2-s3-role.png](aws-console-&-linux/iam-role-ec2-s3-role.png) — IAM role attachment
+- [aws-console-&-linux/cloudwatch-metrics-dashboard.png](aws-console-&-linux/cloudwatch-metrics-dashboard.png) — CloudWatch metrics dashboard
+- [aws-console-&-linux/cloudwatch-disk-metrics.png](aws-console-&-linux/cloudwatch-disk-metrics.png) — CloudWatch disk metrics
 - [aws-console-&-linux](aws-console-&-linux) — complete screenshot collection for the AWS and Linux workflow
 
 ## Generated Visualizations
