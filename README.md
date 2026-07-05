@@ -58,6 +58,13 @@ The repository includes proof screenshots from the AWS and Linux workflow in [aw
 - CloudWatch metrics dashboard: [Screenshot 2026-07-05 203250.png](aws-console-&-linux/Screenshot%202026-07-05%20203250.png)
 - CloudWatch disk metrics example: [Screenshot 2026-07-05 203313.png](aws-console-&-linux/Screenshot%202026-07-05%20203313.png)
 
+### AWS Console Keywords Captured in the Screenshots
+
+- EC2 instance details: Ubuntu Server, Linux/UNIX platform, AMI ID, instance type, security groups, networking, and storage
+- IAM role configuration: EC2-S3-Role, attached policies, CloudWatchAgentServerPolicy, and role-based access control
+- CloudWatch monitoring: CWAgent namespace, CPU metrics, memory metrics, disk usage, disk_inodes_free, and log-based observability
+- Cloud deployment workflow: EC2 launch, role assignment, metrics collection, and monitoring dashboard visibility
+
 ## Workflow
 
 1. Load and clean the Superstore dataset locally using Python.
