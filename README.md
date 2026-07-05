@@ -45,7 +45,7 @@ This repository showcases an end-to-end analytics workflow for the Superstore da
 
 ## Project Architecture
 
-## Architecture Diagram
+The repository currently contains one main analysis script in [src/eda_superstore.py](src/eda_superstore.py), the source dataset in [data/sample - superstore (2).xlsx](data/sample%20-%20superstore%20(2).xlsx), generated visualization outputs in [images](images), and AWS/Linux proof screenshots in [aws-console-&-linux](aws-console-&-linux).
 
 ```text
 Superstore Dataset (.xlsx)
@@ -114,15 +114,14 @@ The repository includes proof screenshots from the AWS and Linux workflow in [aw
 
 ```text
 aws-based-superstore-eda/
-├── aws-console-&-linux/   # AWS and Linux screenshots
-├── data/                  # Source dataset files
-├── docs/                  # Documentation and screenshots
-├── images/                # Generated visualizations
-├── reports/               # CSV/text reports and outputs
-├── src/                   # Python analysis scripts
+├── aws-console-&-linux/   # AWS EC2, IAM, and CloudWatch screenshots
+├── data/                  # Superstore dataset file
+├── docs/                  # Architecture preview assets
+├── images/                # Generated EDA charts and plots
+├── src/                   # Python EDA script
+├── architecture.md        # Architecture overview and workflow
 ├── LICENSE
 ├── README.md
-├── architecture.md
 ├── requirements.txt
 └── .gitignore
 ```
@@ -180,6 +179,8 @@ This will generate charts in the images folder and reports in the reports folder
 - [aws-console-&-linux](aws-console-&-linux) — complete screenshot collection for the AWS and Linux workflow
 
 ## Generated Visualizations
+
+The current project generates the following charts in [images](images):
 
 - [images/category-count.png](images/category-count.png)
 - [images/sub-category-count.png](images/sub-category-count.png)
